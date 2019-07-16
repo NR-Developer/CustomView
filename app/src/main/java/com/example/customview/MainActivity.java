@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnSingleTouch:
                 startActivity(new Intent(this, SingleTouchActivity.class));
                 break;
+            case R.id.btnTest:
+                startActivity(new Intent(this, TestActivity.class));
+                break;
         }
     }
 }
