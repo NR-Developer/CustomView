@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.example.customview.EmotionalFaceView
+        android:id="@+id/emotionalFaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"/>
+
+    <com.example.customview.EmotionalFaceView
+        android:id="@+id/happyButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:background="?android:selectableItemBackground"
+        app:borderColor="#fff"
+        app:eyesColor="#fff"
+        app:faceColor="#FF3333"
+        app:mouthColor="#fff"
+        app:state="happy" />
+
+    <com.example.customview.EmotionalFaceView
+        android:id="@+id/sadButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:background="?android:selectableItemBackground"
+        app:borderColor="#000"
+        app:eyesColor="#000"
+        app:faceColor="#ADADAD"
+        app:mouthColor="#000"
+        app:state="sad" />
+
+</RelativeLayout>
