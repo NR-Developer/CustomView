@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="10dp">
 
-    <com.example.customview.EmotionalFaceView
+    <com.example.customview.widget.EmotionalFaceView
         android:id="@+id/emotionalFaceView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,7 +14,7 @@
         android:layout_marginTop="100dp"
         android:layout_centerInParent="true"/>
 
-    <com.example.customview.EmotionalFaceView
+    <com.example.customview.widget.EmotionalFaceView
         android:id="@+id/happyButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -26,7 +26,7 @@
         app:mouthColor="#fff"
         app:state="happy" />
 
-    <com.example.customview.EmotionalFaceView
+    <com.example.customview.widget.EmotionalFaceView
         android:id="@+id/sadButton"
         android:layout_width="50dp"
         android:layout_height="50dp"

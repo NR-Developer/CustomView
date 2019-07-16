@@ -1,59 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:custom="http://schemas.android.com/tools/res/com.example.customview"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="?android:attr/listDivider"
         android:orientation="vertical"
         android:showDividers="middle"
+        android:gravity="center"
         tools:context=".MainActivity">
+        <!--android:divider="?android:attr/listDivider"-->
 
-        <com.example.customview.CustomView
-            android:id="@+id/view1"
-            android:layout_width="match_parent"
-            android:layout_height="?android:attr/listPreferredItemHeight"
-            android:background="?android:selectableItemBackground"
-            android:onClick="onClicked"
-            custom:titleText="Background color"
-            custom:valueColor="@android:color/holo_green_light" />
+        <Button
+            android:id="@+id/btnClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clock Activity"
+            android:onClick="onclickBTN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-        <com.example.customview.CustomView
-            android:id="@+id/view2"
-            android:layout_width="match_parent"
-            android:layout_height="?android:attr/listPreferredItemHeight"
-            android:background="?android:selectableItemBackground"
-            android:onClick="onClicked"
-            custom:titleText="Foreground color"
-            custom:valueColor="@android:color/holo_orange_dark" />
+        <Button
+            android:id="@+id/btnEmotional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Emotional Activity"
+            android:onClick="onclickBTN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-    <!--<com.example.customview.CustomView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="?android:attr/listPreferredItemHeight"-->
-        <!--custom:titleText="Background color"-->
-        <!--custom:valueColor="@android:color/holo_green_light" />-->
+        <Button
+            android:id="@+id/btnSingleTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SingleTouch Activity"
+            android:onClick="onclickBTN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     </LinearLayout>
-
-    <!--<LinearLayout-->
-        <!--android:orientation="vertical"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-
-        <!--<include layout="@layout/fragment_colorpicker"/>-->
-
-        <!--<com.example.customview.TouchEventView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:id="@+id/drawingview">-->
-        <!--</com.example.customview.TouchEventView>-->
-    <!--</LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
